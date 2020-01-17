@@ -1,0 +1,45 @@
+{
+  "name": "mindvalley-universal-player",
+  "version": "0.1.0",
+  "description": "Mindvalley Universal Player",
+  "main": "dist/mindvalley-universal-player.js",
+  "files": [
+    "dist",
+    "src",
+    "nuxt"
+  ],
+  "scripts": {
+    "storybook": "start-storybook",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "example:kitchensink": "poi -s examples/kitchensink/index.js"
+  },
+  "homepage": "https://github.com/mindvalley/universal-player",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@storybook/addon-notes": "^5.1.10",
+    "@storybook/vue": "^5.1.10",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "poi": "^12.7.1",
+    "prettier": "^1.18.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^2.6.10",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}
