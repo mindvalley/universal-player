@@ -1,4 +1,4 @@
-const { VueLoaderPlugin } = require('vue-loader');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -32,5 +32,7 @@ module.exports = {
       },
     ]
   },
-  plugins: [new VueLoaderPlugin()]
+  plugins: [
+    new VueLoaderPlugin();
+  ]
 };
