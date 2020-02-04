@@ -25,6 +25,7 @@
 
       <section
         v-if="markersEnabled"
+        :class="{ 'is-active' : showMarkersMenu }"
         class="markers-container"
       >
         <header class="markers-header">
@@ -112,6 +113,7 @@ export default {
   data () {
     return {
       player: null,
+      showMarkersMenu: false,
     }
   },
   computed: {
@@ -150,10 +152,30 @@ export default {
           pictureInPictureToggle: this.enablePictureInPicture,
         }
       });
+
+
+      if (this.markersEnabled) {
+        var button = videojs.getComponent('Button');
+        var markersButton = videojs.extend(button, {
+          constructor: function() {
+              button.apply(this, arguments);
+              this.controlText("Jump To");
+            },
+            handleClick: function() {
+              self.toggleMarkers();
+            }
+        });
+
+        videojs.registerComponent('markersButton', markersButton);
+        this.player.getChild('controlBar').addChild('markersButton', {});
+      }
     },
     jumpTo: function (seconds) {
       this.player.play();
       this.player.currentTime(seconds);
+    },
+    toggleMarkers: function () {
+      this.showMarkersMenu = !this.showMarkersMenu;
     },
     formatDuration: function(duration) {
       var hour = Math.floor(duration / 3600) || 0;
@@ -211,7 +233,31 @@ export default {
 }
 
 .vjs-control-bar {
-  font-size: 125%;
+  font-size: 100%;
+}
+
+@media (min-width: 600px) {
+  .vjs-control-bar {
+    font-size: 130%;
+  }
+}
+
+.vjs-control.vjs-button[title="Jump To"] {
+  width: 6em;
+  padding-right: 7.5px;
+}
+
+@media (min-width: 1000px) {
+  .vjs-control.vjs-button[title="Jump To"] {
+    display: none;
+  }
+}
+
+.vjs-control.vjs-button[title="Jump To"] > .vjs-control-text {
+  position: static;
+  width: auto;
+  height: auto;
+  clip: auto;
 }
 </style>
 
@@ -242,6 +288,7 @@ $dark-grey: rgb(30, 30, 30);
 
 // Markers Section
 .markers-container {
+  display: none;
   margin: 0;
   flex-shrink: 0;
   width: 100%;
@@ -249,11 +296,17 @@ $dark-grey: rgb(30, 30, 30);
   background-color: $dark-grey;
   color: $light-grey;
   font-family: sans-serif;
+  transform: translateX(0);
+}
+
+.markers-container.is-active {
+  display: block;
   transform: translateX(-100%);
 }
 
 @media (min-width: 600px) {
   .markers-container {
+    display: block;
     width: 50%;
   }
 }
