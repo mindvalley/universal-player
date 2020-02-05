@@ -318,7 +318,6 @@ $dark-grey: rgb(30, 30, 30);
   transform: translateX(100%);
   z-index: 100;
   transition: transform 0.7s;
-  overflow-y: scroll;
 }
 
 .markers-container.is-active {
@@ -375,6 +374,10 @@ $dark-grey: rgb(30, 30, 30);
   &:hover {
     color: rgba(255, 255, 255, 0.9);
     transition: color 0.4s, border-color 0.4s;
+  }
+  &:last-child {
+    // .markers-header height + 20px whitespace
+    margin-bottom: 77px;
   }
 }
 
