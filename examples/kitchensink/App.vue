@@ -7,6 +7,13 @@
     />
 
     <br/>
+
+    <mindvalley-universal-player
+      :sources="sources"
+      :posterUrl="posterUrl"
+      :markers="[{ text: 'Welcome to Mindvalley Universal Player', time: 10 }]"
+    />
+
     <br/>
 
     <mindvalley-universal-player
@@ -34,6 +41,10 @@ export default {
         { text: "Welcome to Mindvalley Universal Player", time: 10 },
         { text: "The player has a lot of features, check out the docs for reference", time: 100 },
         { text: "Let's get started", time: 240 },
+        { text: "Let's get started", time: 340 },
+        { text: "Let's get started", time: 540 },
+        { text: "Let's get started", time: 740 },
+        { text: "Let's get started", time: 940 },
         { text: "The documentation can be found here at https://github.com/mindvalley/universal-player", time: 1060 },
         { text: "End", time: 5060 },
       ],

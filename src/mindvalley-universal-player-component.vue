@@ -29,7 +29,13 @@
         class="markers-container"
       >
         <header class="markers-header">
-          Jump to
+          <div class="markers-header__title">Jump To</div>
+          <button
+            @click="toggleMarkers"
+            class="button button--close"
+          >
+            <div class="vjs-icon-cancel"></div>
+          </button>
         </header>
 
         <ul
@@ -218,11 +224,11 @@ export default {
 
 .mv-universal-player .vjs-big-play-button {
   top: auto;
-  bottom: 30px;
-  left: 25px;
-  width: 70px;
-  height: 70px;
-  font-size: 3.5em;
+  bottom: 15px;
+  left: 12.5px;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5em;
   line-height: 1.9;
   border-radius: 50%;
   border-color: transparent;
@@ -230,6 +236,16 @@ export default {
   background-color: white;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s linear;
+}
+
+@media (min-width: 600px) {
+  .mv-universal-player .vjs-big-play-button {
+    bottom: 30px;
+    left: 25px;
+    width: 70px;
+    height: 70px;
+    font-size: 3.5em;
+  }
 }
 
 .vjs-control-bar {
@@ -244,7 +260,7 @@ export default {
 
 .vjs-control.vjs-button[title="Jump To"] {
   width: 6em;
-  padding-right: 7.5px;
+  padding-right: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -267,6 +283,7 @@ $dark-grey: rgb(30, 30, 30);
 
 // Container that hosts both player and markers section.
 .mv-universal-player-container {
+  position: relative;
   display: flex;
   overflow: hidden;
 }
@@ -288,20 +305,26 @@ $dark-grey: rgb(30, 30, 30);
 
 // Markers Section
 .markers-container {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   margin: 0;
   flex-shrink: 0;
   width: 100%;
-  min-height: 100%;
   background-color: $dark-grey;
   color: $light-grey;
   font-family: sans-serif;
-  transform: translateX(0);
+  transform: translateX(100%);
+  z-index: 100;
+  transition: transform 0.7s;
+  overflow-y: scroll;
 }
 
 .markers-container.is-active {
   display: block;
-  transform: translateX(-100%);
+  transform: translateX(0);
+  transition: transform 0.7s;
 }
 
 @media (min-width: 600px) {
@@ -319,8 +342,16 @@ $dark-grey: rgb(30, 30, 30);
 }
 
 .markers-header {
-  padding: 17.5px 21px;
+  display: flex;
+  align-items: center;
+  padding: 10px 21px;
   border-bottom: 1px solid $light-grey;
+}
+
+@media (min-width: 1000px) {
+  .markers-header {
+    padding: 17.5px 21px;
+  }
 }
 
 .markers,
@@ -332,7 +363,7 @@ $dark-grey: rgb(30, 30, 30);
   list-style: none;
   margin: 0;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .markers__item {
@@ -374,5 +405,21 @@ $dark-grey: rgb(30, 30, 30);
   text-align: center;
   border: 1px solid $light-grey;
   border-radius: 5px;
+}
+
+.button--close {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  height: 36px;
+  margin-left: auto;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  .button--close {
+    display: none;
+  }
 }
 </style>
