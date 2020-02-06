@@ -2,6 +2,8 @@
 
 ## Installation
 
+Supported Formats: HLS, MP4, MP3, Ogg.
+
 ### 1. Install
 ```
 yarn add mindvalley-universal-player
@@ -31,7 +33,7 @@ new Vue({
 <script>
   export default {
     async created() {
-      console.log(this.$mvPlayer);
+      // console.log(this.$mvPlayer);
     },
   };
 </script>

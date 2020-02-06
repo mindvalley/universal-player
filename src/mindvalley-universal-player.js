@@ -20,8 +20,8 @@ export default class MindvalleyUniversalPlayer {
   }
 
   static register = (Vue, options, store) => {
-    console.log('Here is the options of the component', options);
-    console.log('Here is the store of the app', store);
+    // console.log('Here is the options of the component', options);
+    // console.log('Here is the store of the app', store);
     // You can use `this.options` property to access options.
 
     // Delete this line if your plug-in doesn't provide any components
@@ -47,8 +47,7 @@ export default class MindvalleyUniversalPlayer {
   // Some lifecycle hooks to add on mixin
   static mixin = () => ({
     mounted() {
-      console.log('Hey! I am running on every mount, please remove me!');
-      console.log(this.$store);
+      // console.log(this.$store);
     }
   });
 
