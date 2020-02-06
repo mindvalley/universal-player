@@ -135,7 +135,7 @@ export default {
   },
   beforeDestroy () {
     if (!this.player) {
-      this.initialize()
+      this.player.dispose();
     }
   },
   methods: {
@@ -343,7 +343,7 @@ $dark-grey: rgb(30, 30, 30);
 .markers-header {
   display: flex;
   align-items: center;
-  padding: 10px 21px;
+  padding: 10px 10px 10px 21px;
   border-bottom: 1px solid $light-grey;
 }
 
