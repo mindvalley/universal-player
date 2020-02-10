@@ -46,6 +46,7 @@
     "vue": "^2.6.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "video.js": "^7.6.6"
   }
 }

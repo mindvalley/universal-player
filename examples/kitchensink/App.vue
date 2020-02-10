@@ -1,8 +1,22 @@
 <template>
   <div>
+    <div style="max-width: 800px;">
+      <mindvalley-universal-player
+        player-type="audio"
+        media-title="Becoming Limitless"
+        :duration="195"
+        :sources="[{ src: 'https://assets.mindvalley.com/api/v1/assets/a1940564-f062-4756-ba15-5bfdbfffe8af.mp3', type: 'audio/mpeg' }, { src: 'https://assets.mindvalley.com/api/v1/assets/6441c1b6-6659-4f40-8d4f-66d1f4d8e6ec.ogg', type: 'audio/ogg' }]"
+        posterUrl="https://assets.mindvalley.com/api/v1/assets/e129ae13-bf44-48ac-baf7-fcc5c59a96a9.jpg"
+        :markers="markers"
+      />
+    </div>
+
+    <br/>
+
     <mindvalley-universal-player
       :sources="sources"
       :posterUrl="posterUrl"
+      :duration="195"
       :markers="markers"
     />
 
@@ -11,6 +25,7 @@
     <mindvalley-universal-player
       :sources="sources"
       :posterUrl="posterUrl"
+      :duration="195"
       :markers="[{ text: 'Welcome to Mindvalley Universal Player', time: 10 }]"
     />
 
@@ -19,6 +34,7 @@
     <mindvalley-universal-player
       :sources="sources"
       :posterUrl="posterUrl"
+      :duration="195"
     />
   </div>
 </template>
