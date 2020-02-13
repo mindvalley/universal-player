@@ -1,10 +1,22 @@
 # MindvalleyUniversalPlayer
 
+## Development
+
+We use Yarn to manage packages.
+And Vue CLI to run linting & testing.
+Please install both before you begin any development on the player.
+
+```
+npm install -g yarn
+yarn global add @vue/cli
+```
+
 ## Installation
 
 Supported Formats: HLS, MP4, MP3, Ogg.
 
 ### 1. Install
+
 ```
 yarn add mindvalley-universal-player
 # or
@@ -12,6 +24,7 @@ npm i mindvalley-universal-player --save
 ```
 
 ### 2. Plug-in
+
 ```js
 import MindvalleyUniversalPlayer from 'mindvalley-universal-player'
 
