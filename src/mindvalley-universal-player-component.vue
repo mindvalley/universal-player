@@ -61,7 +61,6 @@
 
 <script>
 import videojs from 'video.js';
-import 'video.js/dist/video-js.css';
 
 export default {
   name: 'MindvalleyUniversalPlayer',
@@ -213,6 +212,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'video.js/dist/video-js';
 // This is for overrding Video.js' default styles.
 // Video.js renders the element after the DOM is loaded.
 // Scoped styles won't work.
