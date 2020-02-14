@@ -11,6 +11,16 @@ npm install -g yarn
 yarn global add @vue/cli
 ```
 
+To run unit tests
+```
+yarn run test:unit
+```
+
+To run E2E tests
+```
+yarn run test:e2e
+```
+
 ## Installation
 
 Supported Formats: HLS, MP4, MP3, Ogg.
