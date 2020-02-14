@@ -1,9 +1,9 @@
 # MindvalleyUniversalPlayer
 
-## Development
+## Development & Testing
 
 We use Yarn to manage packages.
-And Vue CLI to run linting & testing.
+And Vue CLI for development, linting & testing.
 Please install both before you begin any development on the player.
 
 ```
