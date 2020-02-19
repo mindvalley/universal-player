@@ -126,11 +126,6 @@
 
 <script>
 import videojs from 'video.js';
-import 'video.js/dist/video-js.css';
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
-import '@fortawesome/fontawesome-free/js/brands';
 
 export default {
   name: 'MindvalleyUniversalPlayer',
@@ -324,20 +319,10 @@ export default {
     },
   }
 }
-
-// import { mapActions, mapGetters } from 'vuex';
-
-// export default {
-//   computed: {
-//     ...mapGetters('counterStore', ['counter'])
-//   },
-//   methods: {
-//     ...mapActions('counterStore', ['increment'])
-//   }
-// };
 </script>
 
 <style lang="scss">
+@import 'video.js/dist/video-js';
 // This is for overrding Video.js' default styles.
 // Video.js renders the element after the DOM is loaded.
 // Scoped styles won't work.
