@@ -10,7 +10,9 @@ export default {
         )
         return video_renditions.sort((a, b) => a.id.localeCompare(b.id))
       } else if (asset_type.startsWith('audio/')) {
-        var audio_renditions = renditions.filter(rendition => ['mp3', 'ogg'].includes(rendition.id))
+        var audio_renditions = renditions.filter(rendition =>
+          ['mp3', 'ogg'].includes(rendition.id)
+        )
         return audio_renditions.sort((a, b) => a.id.localeCompare(b.id))
       }
     }

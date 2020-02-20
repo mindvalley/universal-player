@@ -22,6 +22,12 @@ describe('asset-formatter-test-component.vue', () => {
       status: 'completed',
       id: 'ogg',
       contentType: 'audio/ogg'
+    },
+    {
+      url: '//vjs.zencdn.net/v/oceans.mp3',
+      status: 'completed',
+      id: 'mp3',
+      contentType: 'audio/mp3'
     }
   ]
   const video_asset = {
@@ -47,6 +53,12 @@ describe('asset-formatter-test-component.vue', () => {
     }
   ]
   const audio_result = [
+    {
+      url: '//vjs.zencdn.net/v/oceans.mp3',
+      status: 'completed',
+      id: 'mp3',
+      contentType: 'audio/mp3'
+    },
     {
       url: '//vjs.zencdn.net/v/oceans.ogg',
       status: 'completed',
