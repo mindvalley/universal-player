@@ -8,11 +8,7 @@
     "storybook": "start-storybook"
   },
   "main": "dist/mindvalley-universal-player.js",
-  "files": [
-    "dist",
-    "src",
-    "nuxt"
-  ],
+  "files": ["dist", "src", "nuxt"],
   "dependencies": {
     "video.js": "^7.6.6",
     "vue": "^2.6.11"

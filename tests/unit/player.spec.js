@@ -17,36 +17,42 @@ describe('Mindvalley Universal Player', () => {
     propsData: { sources, markers }
   })
 
-  it('sources & markers should be object type', () => {
-    expect(typeof sources).toEqual('object')
-    expect(typeof markers).toEqual('object')
+  const vm = wrapper.vm
+
+  // it('sources & markers should be object type', () => {
+  //   expect(typeof sources).toEqual('object')
+  //   expect(typeof markers).toEqual('object')
+  // })
+
+  it('renders', () => {
+    expect(wrapper.exists()).toBe(true)
   })
 
   it('should check if player is initilized', () => {
-    expect(wrapper.vm.player).toBeTruthy()
+    expect(vm.player).toBeTruthy()
   })
 
   it('should play when play button is clicked', () => {
     const button = wrapper.find('.vjs-big-play-button')
-    wrapper.vm.player.play = jest.fn()
+    vm.player.play = jest.fn()
     button.trigger('click')
-    expect(wrapper.vm.player.play).toBeCalled()
+    expect(vm.player.play).toBeCalled()
   })
 
   it('should run player currentTime when jumpTo is called', () => {
-    wrapper.vm.player.currentTime = jest.fn()
-    wrapper.vm.jumpTo(60)
-    expect(wrapper.vm.player.currentTime).toBeCalledWith(60)
+    vm.player.currentTime = jest.fn()
+    vm.jumpTo(60)
+    expect(vm.player.play).toBeCalled()
+    expect(vm.player.currentTime).toBeCalledWith(60)
   })
 
   it('should toggleMarkers correctly', () => {
     wrapper.setData({ showMarkersMenu: false })
-    wrapper.vm.toggleMarkers()
-    expect(wrapper.vm.showMarkersMenu).toBeTruthy()
+    vm.toggleMarkers()
+    expect(vm.showMarkersMenu).toBeTruthy()
   })
 
   it('should formatDuration correctly', () => {
-    const format_duration = wrapper.vm.formatDuration(3600)
-    expect(format_duration).toEqual('1:00:00')
+    expect(vm.formatDuration(3600)).toEqual('1:00:00')
   })
 })
