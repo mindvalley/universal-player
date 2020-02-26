@@ -94,7 +94,6 @@ describe('Mindvalley Universal Player', () => {
       wrapper.setData({ showMarkersMenu: true })
 
       const close_button = wrapper.find('.button--close')
-      const markers = wrapper.find('.markers-container')
       close_button.trigger('click')
       expect(vm.showMarkersMenu).toBeFalsy()
     })
