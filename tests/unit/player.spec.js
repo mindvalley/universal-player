@@ -33,6 +33,11 @@ describe('Mindvalley Universal Player', () => {
   vm.player.currentTime = jest.fn()
 
   describe('Test Vue Methods', () => {
+    it('should initialize video player', () => {
+      vm.initialize()
+      expect(vm.player).toBeTruthy()
+    })
+
     it('should run player currentTime when jumpTo is called', () => {
       vm.jumpTo(60)
       expect(vm.player.play).toBeCalled()
@@ -41,13 +46,13 @@ describe('Mindvalley Universal Player', () => {
 
     it('should show showMarkersMenu true after toggleMarkers, if initial is false', () => {
       vm.toggleMarkers()
-      expect(vm.showMarkersMenu).toBeTruthy()
+      expect(vm.showMarkersMenu).toBe(true)
     })
 
     it('should show showMarkersMenu false after toggleMarkers, if initial is true', () => {
       wrapper.setData({ showMarkersMenu: true })
       vm.toggleMarkers()
-      expect(vm.showMarkersMenu).toBeFalsy()
+      expect(vm.showMarkersMenu).toBe(false)
     })
 
     it('should formatDuration correctly', () => {
@@ -59,12 +64,12 @@ describe('Mindvalley Universal Player', () => {
 
   describe('Test Vue Computed Properties', () => {
     it('should show markersEnabled true when markers is not null', () => {
-      expect(vm.markersEnabled).toBeTruthy()
+      expect(vm.markersEnabled).toBe(true)
     })
 
     it('should show markersEnabled false when markers is null', () => {
       wrapper.setProps({ markers: null })
-      expect(vm.markersEnabled).toBeFalsy()
+      expect(vm.markersEnabled).toBe(false)
     })
 
     it('should sort markers according to time', () => {
@@ -95,7 +100,11 @@ describe('Mindvalley Universal Player', () => {
 
       const close_button = wrapper.find('.button--close')
       close_button.trigger('click')
-      expect(vm.showMarkersMenu).toBeFalsy()
+
+      const markers = wrapper.find('.markers-container')
+
+      expect(vm.showMarkersMenu).toBe(false)
+      expect(markers.contains('.is-active')).toBe(false)
     })
   })
 })
