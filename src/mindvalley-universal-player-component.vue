@@ -60,7 +60,6 @@
     </section>
 
     <!-- Audio Player Default User Interface Section -->
-
     <section
       v-if="audioPlayerMode"
       class="audio-interface"
@@ -77,12 +76,6 @@
         </div>
 
         <div class="audio-interface__progress-bar">
-          <small class="audio-interface__current-time">
-            {{ formatDuration(currentTime) }}
-          </small>
-          <small class="audio-interface__duration">
-            {{ formatDuration(duration) }}
-          </small>
           <div
             @click="seek"
             ref="seeker"
@@ -93,6 +86,12 @@
               :style="{ width: this.durationCompletionPercentage + '%' }"
               class="audio-interface__current-time-seeker"></div>
           </div>
+          <small class="audio-interface__current-time">
+            {{ formatDuration(currentTime) }}
+          </small>
+          <small class="audio-interface__duration">
+            {{ formatDuration(duration) }}
+          </small>
         </div>
 
         <div class="audio-interface__controls">
@@ -531,18 +530,40 @@ $dark-grey: rgb(30, 30, 30);
 .audio-interface {
   width: 100%;
   color: white;
-  background-color:#23272f;
+  background: linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69));
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .audio-interface {
     display: flex;
   }
 }
 
+.audio-interface__head {
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .audio-interface__head {
+    width: 40%;
+    padding: 1.5rem;
+  }
+}
+
 @media (min-width: 1000px) {
   .audio-interface__head {
-    width: 30%;
+    width: 25%;
+  }
+}
+
+@media (min-width: 600px) {
+  .audio-interface__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-grow: 1;
+    width: 60%;
+    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
   }
 }
 
@@ -551,15 +572,16 @@ $dark-grey: rgb(30, 30, 30);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 70%;
-    flex-grow: 1;
+    width: 75%;
+    padding: 2rem 2rem 3rem 0.5rem;
   }
 }
 
 .audio-interface__title,
 .audio-interface__progress-bar,
 .audio-interface__controls {
-  padding: 20px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .audio-interface__poster {
@@ -567,53 +589,77 @@ $dark-grey: rgb(30, 30, 30);
   padding-top: 100%;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .audio-interface__title {
-  text-align: center;
+  margin-right: 1px;
+  margin-left: 1px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .audio-interface__title {
     order: 1;
     flex-grow: 1;
     flex-shrink: 0;
     width: 70%;
-    margin-bottom: -40px;
-    margin-left: 10px;
-    padding: 20px 20px 0 20px;
+    padding: 0 0 2rem 0;
     font-size: 1.4em;
     text-align: left;
   }
 }
 
-.audio-interface__progress-bar {
-  padding: 0 20px;
-}
-
 @media (min-width: 1000px) {
-  .audio-interface__progress-bar {
-    flex-grow: 1;
-    order: 3;
-    width: 200px;
-    margin-left: -20px;
-    padding: 0 20px 20px 20px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .audio-interface__controls {
-    order: 2;
-    width: 200px;
-    flex-shrink: 0;
-    padding: 0 20px 20px 20px;
+  .audio-interface__title {
+    padding-bottom: 3rem;
   }
 }
 
 .audio-interface__progress-bar {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .audio-interface__progress-bar {
+    flex-grow: 1;
+    order: 3;
+    width: 200px;
+    margin: 0;
+    padding: 1rem 0 0 0;
+  }
+}
+
+.audio-interface__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 2.75rem;
+}
+
+@media (min-width: 600px) {
+  .audio-interface__controls {
+    order: 2;
+    width: 600px;
+    flex-shrink: 1;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .audio-interface__controls {
+    width: 230px;
+    flex-shrink: 0;
+    padding: 0;
+  }
 }
 
 .audio-interface__seeker {
@@ -623,7 +669,7 @@ $dark-grey: rgb(30, 30, 30);
   border-radius: 6px;
   width: 100%;
   flex-shrink: 0;
-  margin-top: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .audio-interface__current-time-seeker {
@@ -643,12 +689,6 @@ $dark-grey: rgb(30, 30, 30);
 .audio-interface__duration {
   margin-left: auto;
   margin-right: 1px;
-}
-
-.audio-interface__controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .button {
@@ -684,10 +724,17 @@ $dark-grey: rgb(30, 30, 30);
   transition: background-color 0.3s linear;
 }
 
+@media (min-width: 1000px) {
+  .button--audio-play {
+    order: 1;
+    margin-right: 1rem;
+  }
+}
+
 .button--audio-rewind {
   width: 44px;
   height: 44px;
-  margin-right: 15px;
+  margin-right: 1rem;
   border: 2px solid white;
   border-radius: 50%;
   font-size: 0.8em;
@@ -695,14 +742,29 @@ $dark-grey: rgb(30, 30, 30);
   background: transparent;
 }
 
+@media (min-width: 1000px) {
+  .button--audio-rewind {
+    order : 3;
+    margin-right: 0;
+  }
+}
+
 .button--audio-playback-rate {
   width: 44px;
   height: 44px;
-  margin-left: 15px;
+  margin-left: 1rem;
   border: 2px solid white;
   border-radius: 50%;
   font-size: 0.95em;
   color: white;
   background: transparent;
+}
+
+@media (min-width: 1000px) {
+  .button--audio-playback-rate {
+    order : 2;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 </style>

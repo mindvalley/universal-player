@@ -1,11 +1,25 @@
 <template>
-  <div>
+  <div class="demo">
     <mindvalley-universal-player
       :sources="sources"
       :posterUrl="posterUrl"
       :markers="markers"
       :duration="46"
     />
+
+    <br>
+    <br>
+
+    <mindvalley-universal-player
+      player-type="audio"
+      media-title="[Audio] Meditationen der Lektion: Geführte Reise"
+      :sources="sources"
+      :posterUrl="posterUrl"
+      :duration="46"
+    />
+
+    <br>
+    <br>
   </div>
 </template>
 
@@ -39,4 +53,11 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
+.demo {
+  max-width: 1000px;
+}
 </style>
