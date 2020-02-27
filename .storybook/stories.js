@@ -42,10 +42,10 @@ stories
         \`\`\`html
         <template>
           <mindvalley-universal-player
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -79,10 +79,10 @@ stories
         <template>
           <mindvalley-universal-player
             posterUrl="//vjs.zencdn.net/v/oceans.png"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -114,10 +114,10 @@ stories
         <template>
           <mindvalley-universal-player
             :autoplay="true"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -149,10 +149,10 @@ stories
         <template>
           <mindvalley-universal-player
             :show-controls="false"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -184,10 +184,10 @@ stories
         \`\`\`html
           <mindvalley-universal-player
             :disable-fullscreen="true"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -222,10 +222,10 @@ stories
         <template>
           <mindvalley-universal-player
             :playback-rates="[0.5, 0.75, 1, 1.25, 1.5, 2]"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -260,10 +260,10 @@ stories
         <template>
           <mindvalley-universal-player
             :disable-playback-rates="true"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -294,10 +294,10 @@ stories
         <template>
           <mindvalley-universal-player
             :enable-picture-in-picture="true"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
@@ -329,10 +329,10 @@ stories
         <template>
           <mindvalley-universal-player
             :autoplay="true"
-            :sources="[ 
-              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }, 
-              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }, 
-              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }, 
+            :sources="[
+              { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+              { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },
+              { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' },
             ]"
           />
         </template>
