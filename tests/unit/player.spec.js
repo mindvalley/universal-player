@@ -8,6 +8,8 @@ describe('Mindvalley Universal Player', () => {
     { src: '//vjs.zencdn.net/v/oceans.ogv', type: 'video/ogg' }
   ]
 
+  const invalid_sources = [{ src: '//vjs.zencdn.net/v/oceans.pdf', type: 'file/pdf' }]
+
   const markers = [
     { time: 120, text: 'Marker Title 1' },
     { time: 60, text: 'Marker Title 2' }
@@ -105,6 +107,20 @@ describe('Mindvalley Universal Player', () => {
 
       expect(vm.showMarkersMenu).toBe(false)
       expect(markers.contains('.is-active')).toBe(false)
+    })
+  })
+
+  describe('when sources is empty or invalid', () => {
+    it('should show videojs error modal when sources is invalid', () => {
+      wrapper.setProps({ sources: invalid_sources })
+      const error_modal = wrapper.find('.vjs-error-display')
+      expect(error_modal.exists()).toBe(true)
+    })
+
+    it('should still show video player when sources is empty', () => {
+      wrapper.setProps({ sources: [] })
+      const play_button = wrapper.find('.vjs-big-play-button')
+      expect(play_button.exists()).toBe(true)
     })
   })
 })
