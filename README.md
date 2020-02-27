@@ -21,6 +21,11 @@ To run E2E tests
 yarn run test:e2e
 ```
 
+Cleaning package.json
+```
+npx sort-package-json
+```
+
 ## Installation
 
 Supported Formats: HLS, MP4, MP3, Ogg.
