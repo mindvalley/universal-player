@@ -96,26 +96,32 @@
 
         <div class="audio-interface__controls">
 
-          <button class="button button--audio-rewind">
-            <i class="fas fa-backward"></i>
+          <button
+            @click="rewind"
+            class="button button--audio-rewind"
+          >
+            <i class="icon icon-rewind-ten"></i>
           </button>
 
           <button
             v-if="playing"
             @click="togglePlayState()"
             class="button button--audio-play">
-              <div><i class="fas fa-pause"></i></div>
+              <div><i class="icon icon-pause"></i></div>
           </button>
 
           <button
             v-if="!playing"
             @click="togglePlayState()"
             class="button button--audio-play">
-              <div><i class="fas fa-play"></i></div>
+              <div><i class="icon icon-play"></i></div>
           </button>
 
-          <button class="button button--audio-playback-rate">
-            1x
+          <button
+            @click="nextPlaybackRate"
+            class="button button--audio-playback-rate"
+          >
+            {{ playbackRate }}x
           </button>
         </div>
       </section>
@@ -191,6 +197,7 @@ export default {
       video: null,
       player: null,
       playing: false,
+      playbackRate: 1,
       currentTime: 0,
       showMarkersMenu: false,
     }
@@ -287,8 +294,24 @@ export default {
     pause: function () {
       this.player.pause();
     },
+    rewind: function () {
+      var time = this.currentTime - 10
+      this.jumpTo(time)
+    },
     togglePlayState: function () {
       this.playing ? this.pause() : this.play();
+    },
+    nextPlaybackRate: function () {
+      var currentPlaybackRateIndex = this.playbackRates.indexOf((this.player.playbackRate()));
+      var nextPlaybackRateIndex = currentPlaybackRateIndex + 1;
+      var playbackRatesLength = this.playbackRates.length;
+      if ( nextPlaybackRateIndex == playbackRatesLength) {
+        this.playbackRate = this.playbackRates[0];
+        this.player.playbackRate(this.playbackRates[0]);
+      } else {
+        this.playbackRate = this.playbackRates[nextPlaybackRateIndex];
+        this.player.playbackRate(this.playbackRates[nextPlaybackRateIndex]);
+      }
     },
     seek: function(event) {
       var completionPercentage = (event.offsetX / this.$refs.seeker.offsetWidth) * 100;
@@ -322,6 +345,7 @@ export default {
 
 <style lang="scss">
 @import 'video.js/dist/video-js';
+@import 'assets/icons/embedded-woff2.css';
 // This is for overrding Video.js' default styles.
 // Video.js renders the element after the DOM is loaded.
 // Scoped styles won't work.
@@ -536,6 +560,7 @@ $dark-grey: rgb(30, 30, 30);
 @media (min-width: 600px) {
   .audio-interface {
     display: flex;
+    border-radius: 6px;
   }
 }
 
@@ -715,8 +740,9 @@ $dark-grey: rgb(30, 30, 30);
   width: 66px;
   height: 66px;
   font-size: 1em;
-  line-height: 1.9;
+  line-height: 1;
   border-radius: 50%;
+  font-size: 2.25rem;
   border-color: transparent;
   color: black;
   background-color: white;
@@ -732,12 +758,10 @@ $dark-grey: rgb(30, 30, 30);
 }
 
 .button--audio-rewind {
-  width: 44px;
-  height: 44px;
-  margin-right: 1rem;
-  border: 2px solid white;
-  border-radius: 50%;
-  font-size: 0.8em;
+  outline: none;
+  border: none;
+  font-size: 3.1rem;
+  margin-right: 0.6rem;
   color: white;
   background: transparent;
 }
@@ -764,7 +788,7 @@ $dark-grey: rgb(30, 30, 30);
   .button--audio-playback-rate {
     order : 2;
     margin-left: 0;
-    margin-right: 1rem;
+    margin-right: 0.6rem;
   }
 }
 </style>
