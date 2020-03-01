@@ -34,7 +34,6 @@ describe('Mindvalley Universal Player', () => {
 
   vm.play = jest.fn()
   vm.pause = jest.fn()
-  vm.togglePlayState = jest.fn()
   vm.player.currentTime = jest.fn()
 
   it('should initialize player', () => {
@@ -49,7 +48,7 @@ describe('Mindvalley Universal Player', () => {
   })
 
   describe('Video Player', () => {
-    it('renders important elements correctly', () => {
+    it('renders markers correctly', () => {
       const marker_title = wrapper.find('.markers-header__title')
       const marker_text = wrapper.find('.markers__text')
       const marker_time = wrapper.find('.markers__time')
@@ -126,6 +125,18 @@ describe('Mindvalley Universal Player', () => {
     it('renders poster correctly', () => {
       const poster = wrapper.find('.audio-interface__poster')
       expect(poster.attributes()['style']).toBe('background-image: url(http://www.image.com);')
+    })
+
+    it('should render the correct duration time at progress bar', () => {
+      const current_time = wrapper.find('.audio-interface__current-time')
+      const duration = wrapper.find('.audio-interface__duration')
+      expect(current_time.text()).toBe('1:00')
+      expect(duration.text()).toBe('2:00')
+    })
+
+    it('progress bar should reflect the currentTime of the player', () => {
+      const progress_bar = wrapper.find('.audio-interface__current-time-seeker')
+      expect(progress_bar.attributes()['style']).toBe('width: 50%;')
     })
 
     it('should calculate the durationCompletionPercentage correctly', () => {
