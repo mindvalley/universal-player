@@ -14,7 +14,7 @@ describe('Mindvalley Universal Player', () => {
         { time: 120, text: 'Marker Title 1' },
         { time: 60, text: 'Marker Title 2' }
       ],
-      posterUrl: 'http://www.image.com',
+      posterUrl: 'https://i.picsum.photos/id/52/500/500.jpg',
       playerType: 'video',
       duration: 120,
       mediaTitle: 'Sample Audio Title',
@@ -105,7 +105,7 @@ describe('Mindvalley Universal Player', () => {
     })
   })
 
-  describe('Audio PLayer', () => {
+  describe('Audio Player', () => {
     it('audioPlayerMode should be true when playerType is audio', () => {
       wrapper.setProps({ playerType: 'audio' })
 
@@ -114,17 +114,19 @@ describe('Mindvalley Universal Player', () => {
     })
 
     it('renders audio title correctly', () => {
-      wrapper.setProps({ mediaTitle: 'test test' })
+      wrapper.setProps({ mediaTitle: 'TESTING test' })
 
       Vue.nextTick(() => {
         const media_title = wrapper.find('.audio-interface__title')
-        expect(media_title.text()).toBe('test test')
+        expect(media_title.text()).toBe('TESTING test')
       })
     })
 
     it('renders poster correctly', () => {
       const poster = wrapper.find('.audio-interface__poster')
-      expect(poster.attributes()['style']).toBe('background-image: url(http://www.image.com);')
+      expect(poster.attributes()['style']).toBe(
+        'background-image: url(https://i.picsum.photos/id/52/500/500.jpg);'
+      )
     })
 
     it('should render the correct duration time at progress bar', () => {
