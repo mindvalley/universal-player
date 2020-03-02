@@ -46,7 +46,7 @@
       >
         <li
           @click="jumpTo(marker.time)"
-          v-for="marker in markers"
+          v-for="marker in sortedMarkers"
           class="markers__item"
         >
           <span class="markers__time">
