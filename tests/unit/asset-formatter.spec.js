@@ -1,8 +1,20 @@
 import { shallowMount } from '@vue/test-utils'
-import AssetFormatter from '@/asset-formatter-test-component.vue'
+import AssetFormatter from '../../src/mixins/AssetFormatter.js'
 
 describe('asset-formatter-test-component.vue', () => {
-  const wrapper = shallowMount(AssetFormatter)
+  const Component = {
+    render() {},
+    mixins: [AssetFormatter]
+  }
+
+  const wrapper = shallowMount(Component, {
+    data: function () {
+      return {
+        asset: null
+      }
+    }
+  })
+
   const vm = wrapper.vm
   const all_renditions = [
     {
