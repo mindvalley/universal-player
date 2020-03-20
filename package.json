@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Mindvalley Universal Player",
   "homepage": "https://github.com/mindvalley/universal-player",
-  "main": "dist/mindvalley-universal-player.js",
+  "main": "src/mindvalley-universal-player.js",
   "files": [
     "dist",
     "src",
