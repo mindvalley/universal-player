@@ -1,8 +1,9 @@
 {
-  "name": "mindvalley-universal-player",
+  "name": "@mindvalley/universal-player",
   "version": "0.1.0",
   "description": "Mindvalley Universal Player",
   "homepage": "https://github.com/mindvalley/universal-player",
+  "repository": "git://github.com/mindvalley/universal-player.git",
   "main": "dist/mindvalley-universal-player.js",
   "files": [
     "dist",
