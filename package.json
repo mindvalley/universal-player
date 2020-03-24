@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Mindvalley Universal Player",
   "homepage": "https://github.com/mindvalley/universal-player",
-  "main": "src/mindvalley-universal-player.js",
+  "main": "dist/mindvalley-universal-player.js",
   "files": [
     "dist",
     "src",
@@ -12,7 +12,8 @@
   "scripts": {
     "serve": "poi -s examples/kitchensink/index.js",
     "storybook": "start-storybook",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
   "dependencies": {
     "video.js": "^7.6.6",
@@ -49,6 +50,6 @@
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.1.1",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.11"
   }
 }

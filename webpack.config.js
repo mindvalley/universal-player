@@ -3,11 +3,11 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: ['./src/vue-plugin.js'],
+  entry: ['./src/mindvalley-universal-player.js'],
   output: {
-    library: 'VuePlugin',
+    library: 'MindvalleyUniversalPlayer',
     libraryTarget: 'umd',
-    filename: 'vue-plugin.js',
+    filename: 'mindvalley-universal-player.js',
     globalObject: "typeof self !== 'undefined' ? self : this"
   },
   module: {
