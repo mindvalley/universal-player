@@ -265,10 +265,12 @@ export default {
 
       this.player.on('play', function() {
         self.playing = true;
+        self.$emit('play');
       });
 
       this.player.on('pause', function() {
         self.playing = false;
+        self.$emit('pause');
       });
 
       if (this.markersEnabled) {
@@ -343,7 +345,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import 'video.js/dist/video-js';
 @import 'assets/icons/embedded-woff2.css';
 // This is for overrding Video.js' default styles.
