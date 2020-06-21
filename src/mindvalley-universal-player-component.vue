@@ -258,17 +258,17 @@ export default {
         }
       });
 
-      this.player.on('timeupdate', function() {
+      self.player.on('timeupdate', function() {
         self.currentTime = this.currentTime();
         self.$emit('timeupdate', this.currentTime());
       });
 
-      this.player.on('play', function() {
+      self.player.on('play', function() {
         self.playing = true;
         self.$emit('play');
       });
 
-      this.player.on('pause', function() {
+      self.player.on('pause', function() {
         self.playing = false;
         self.$emit('pause');
       });
