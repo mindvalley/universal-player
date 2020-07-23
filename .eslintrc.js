@@ -3,8 +3,13 @@ module.exports = {
   env: {
     node: true,
   },
+  globals: {
+    jest: true,
+  },
   extends: [
     'plugin:vue/essential',
+    'plugin:vue/strongly-recommended',
+    'plugin:vue/recommended',
     '@vue/airbnb',
   ],
   parserOptions: {
