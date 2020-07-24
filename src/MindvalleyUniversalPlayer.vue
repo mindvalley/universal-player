@@ -46,6 +46,10 @@ export default {
       type: String,
       default: '',
     },
+    mediaDuration: {
+      type: Number,
+      required: true,
+    },
     markers: {
       type: Array,
       default() {

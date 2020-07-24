@@ -26,7 +26,7 @@
         @click="jumpToTime(marker.time)"
       >
         <span class="markers__time">
-          {{ marker.time }}
+          {{ formatDuration(marker.time) }}
         </span>
         <span class="markers__text">
           {{ marker.text }}
@@ -62,6 +62,20 @@ export default {
     toggleMarkers() {
       this.$emit('markersMenuVisibilityChange');
     },
+    formatDuration(duration) {
+      const hour = Math.floor(duration / 3600) || 0;
+      const minute = Math.floor((duration % 3600) / 60) || 0;
+      const second = Math.floor(duration % 60) || 0;
+      let secMin = '';
+
+      if (hour > 0) {
+        secMin += `${hour}:${minute < 10 ? '0' : ''}`;
+      }
+      secMin += `${minute}:${second < 10 ? '0' : ''}`;
+      secMin += `${second}`;
+
+      return secMin;
+    },
   },
 };
 </script>
@@ -76,7 +90,7 @@ export default {
   flex-shrink: 0;
   width: 100%;
   background-color: rgb(30, 30, 30);
-  color: rgba(148, 148, 148, 0.7);
+  color: #95989d;
   font-family: sans-serif;
   transform: translateX(100%);
   z-index: 100;
@@ -166,12 +180,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  padding: 0.4rem;
   margin-right: 15px;
   flex-shrink: 0;
   width: 75px;
   text-align: center;
-  border: 1px solid rgba(148, 148, 148, 0.7);
+  border: 1px solid hsla(0, 0%, 59%, .4);
   border-radius: 5px;
 }
 
