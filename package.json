@@ -1,7 +1,6 @@
 {
   "name": "@mindvalley/universal-player",
   "version": "1.0.0",
-  "private": true,
   "main": "./dist/mindvalley-universal-player.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
