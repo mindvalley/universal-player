@@ -65,6 +65,7 @@
           <button
             v-if="playing"
             class="button button--audio-play"
+            :class="{ 'push-button-right' : !playbackRatesEnabled }"
             @click="togglePlayState()"
           >
             <i class="mup-icon mup-icon-pause" />
@@ -256,7 +257,6 @@ export default {
 @media (min-width: 600px) {
   .audio-interface {
     display: flex;
-    border-radius: 6px;
   }
 }
 
@@ -307,7 +307,7 @@ export default {
   padding-top: 100%;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
               0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
