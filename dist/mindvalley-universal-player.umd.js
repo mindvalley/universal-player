@@ -103,6 +103,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ }),
 
+/***/ "00a8":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "@font-face{font-family:UniversalPlayer;src:url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOMAA0AAAAAB9QAAAM4AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cBmAAgloIBBEICoNkgzoLFAABNgIkAyQEIAWEKAdUG7UGyB6D426JpWGKoUWEbfzGEw+Pa+X7SWYOgOWV2VUxOSChd21RubKrsYAOFZA88OHnfn/ucI0X871hqkPHG2qDptZcmmh6IUGkmnzJ5P89nE8c7sOxOeDnEQeayNgDo7U1gc67tATGXJjH+fwg+o/aNW2Snp25EALenX/QAT6G7rxJ3UveTiZVpIfpDvehfny2IZRJqkziFr1YqMFvJl9eTn4uMdmAAAVmEWR0y0kEHKckMEnZNtCuVZLQZfZ3WoZPUj0v76u+aptJoib7NSQUyn8mqMDDzKV+EMsk0Ab6QSfu4AWgE2swAAgtUik9s5qa7S3drZ2dHVVXOdmh0r5Rc3hcReoYGeLnlowrZvO1Bl4Dc+RtGpHePGhqRiQLIvqBV4g5/KYhqZvPyLS3z3J0ys5wj+PgmGHvkOnklJWdE6+F9tiUOex62HQ76hhZfdBw3j8laQ5rsGEbh0Ol2SFUKo12Le5YFstty9+pokjhmkIMwsPMTVXLf09vjs/9nx6yZqt5evD8LWE+ZFMbVhBC5tNF4eJCEDfNzTfPb0d3dUZvnwPf4nvyM6TolMMKn/Rw6CAXBC5dogOSPpIUSVCGVEg5XcjKvf2b2/nLx9NVUlM+IDm7NA7IpUam6wDrlpjoxiJn2MTDxLTWXDSZ3/gqAVsKBIaXy1s59ynB2l2nLcp+cCe1yieOlRknTnISueJn2FVjwWcF8ydBECzFhA0W6wX8b+3Iv5en+VerbUCrBIKl5ncuf2foIUsIysC2uMkCiMOQf4O9c5r5lbcNxx0Cbc5RAwkhsI8rgG6PBKDTuI/QYz+SFleQraRA0RMDqHTG7t61nrhOSZQ2jAIgTLND0u0UspNEFNP+ojIaVuvWpiNOFFGTFlSodrxmono8nF53hrbzq+RNgBPkarThNWlWSpBCUKozpsNWV7wVzAWO4lVpzRdIkle+qdAVUS7p8jWq8CiOKxblh/YhyY/keHLhrbM5rBJ3sRKe1FTFU86VpX50LIJYiPN08XbZ5SnyPDQnS6lqxu2hZGPV4GC1zDJXljZpShSey4PYYKw2hBQpshwlqqjL/4dzMuFH1Vpv10SxEpsmU3I=) format(\"woff2\");font-weight:400;font-style:normal}.mup-icon{display:inline-block;font:normal normal normal 14px/1 UniversalPlayer;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.mup-icon-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.mup-icon-2x{font-size:2em}.mup-icon-3x{font-size:3em}.mup-icon-4x{font-size:4em}.mup-icon-5x{font-size:5em}.mup-icon-fw{width:1.28571429em;text-align:center}.mup-icon-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.mup-icon-ul>li{position:relative}.mup-icon-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.mup-icon-li.mup-icon-lg{left:-1.85714286em}.mup-icon-border{padding:.2em .25em .15em;border:.08em solid #eee;border-radius:.1em}.pull-right{float:right}.pull-left{float:left}.mup-icon.pull-left{margin-right:.3em}.mup-icon.pull-right{margin-left:.3em}.mup-icon-spin{-webkit-animation:mup-icon-spin 2s linear infinite;animation:mup-icon-spin 2s linear infinite}.mup-icon-pulse{-webkit-animation:mup-icon-spin 1s steps(8) infinite;animation:mup-icon-spin 1s steps(8) infinite}@-webkit-keyframes mup-icon-spin{0%{transform:rotate(0)}to{transform:rotate(359deg)}}@keyframes mup-icon-spin{0%{transform:rotate(0)}to{transform:rotate(359deg)}}.mup-icon-rotate-90{transform:rotate(90deg)}.mup-icon-rotate-180{transform:rotate(180deg)}.mup-icon-rotate-270{transform:rotate(270deg)}.mup-icon-flip-horizontal{transform:scaleX(-1)}.mup-icon-flip-vertical{transform:scaleY(-1)}:root .mup-icon-flip-horizontal,:root .mup-icon-flip-vertical,:root .mup-icon-rotate-90,:root .mup-icon-rotate-180,:root .mup-icon-rotate-270{-webkit-filter:none;filter:none}.mup-icon-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.mup-icon-stack-1x,.mup-icon-stack-2x{position:absolute;left:0;width:100%;text-align:center}.mup-icon-stack-1x{line-height:inherit}.mup-icon-stack-2x{font-size:2em}.mup-icon-inverse{color:#fff}.mup-icon-play:before{content:\"\\f000\"}.mup-icon-rewind:before{content:\"\\f001\"}.mup-icon-pause:before{content:\"\\f002\"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "00ee":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3967,7 +3981,7 @@ module.exports = function (bitmap, value) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".mv-universal-player--audio{display:none}.audio-interface{width:100%;max-width:1080px;color:#fff;border-radius:10px;background-color:#23272f;font-family:sans-serif}@media(min-width:600px){.audio-interface{display:flex;border-radius:6px}}.audio-interface__head{padding:0}@media(min-width:600px){.audio-interface__head{width:40%}}@media(min-width:1000px){.audio-interface__head{width:25%}}@media(min-width:600px){.audio-interface__body{display:flex;flex-wrap:wrap;align-content:center;flex-grow:1;width:60%;padding:1.5rem}}@media(min-width:1000px){.audio-interface__body{align-items:center;width:75%;padding:2.5rem}}.audio-interface__controls,.audio-interface__progress-bar,.audio-interface__title{padding-right:1.5rem;padding-left:1.5rem}.audio-interface__poster{width:100%;padding-top:100%;background-size:cover;background-position:50%;border-radius:10px;box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}@media(min-width:600px){.audio-interface__poster{border-radius:10px 0 0 10px;box-shadow:none}}.audio-interface__title{margin-right:1px;margin-left:1px;padding-top:1.5rem;padding-bottom:1.5rem;font-weight:700;font-size:1.25rem;line-height:1.5}@media(min-width:600px){.audio-interface__title{order:1;flex-grow:1;flex-shrink:0;width:70%;padding:0 0 2rem 0;font-size:1.4em;text-align:left}}@media(min-width:1000px){.audio-interface__title{width:100%}}.audio-interface__progress-bar{display:flex;flex-wrap:wrap;padding:0 1.5rem}@media(min-width:600px){.audio-interface__progress-bar{flex-grow:1;order:3;width:200px;margin:0;padding:1rem 0 0 0}}.audio-interface__controls{display:flex;align-items:center;justify-content:center;padding-top:1.5rem;padding-bottom:2.75rem}@media(min-width:600px){.audio-interface__controls{order:2;width:600px;flex-shrink:1;padding:0}}@media(min-width:1000px){.audio-interface__controls{width:230px;flex-shrink:0;padding:0}}.audio-interface__seeker{position:relative;background-color:grey;height:7px;border-radius:6px;width:100%;flex-shrink:0;margin-bottom:.5rem}.audio-interface__current-time-seeker{position:absolute;top:0;right:0;bottom:0;left:0;background-color:#2a8cf8;border-radius:6px}.audio-interface__current-time{margin-left:1px}.audio-interface__duration{margin-left:auto;margin-right:1px}.button--audio-play{width:66px;height:66px;font-size:1em;line-height:1;border-radius:50%;font-size:2.25rem;padding:0 0 8px 0;border-color:transparent;color:#000;background-color:#fff;box-shadow:0 15px 30px rgba(0,0,0,.25);transition:background-color .3s linear}@media(min-width:1000px){.button--audio-play{order:1;margin-right:1rem}}.button--audio-rewind{width:40px;height:44px;outline:none;padding:0;border:none;font-size:1rem;margin-right:1rem;color:#fff;background:transparent}@media(min-width:1000px){.button--audio-rewind{order:3;margin-right:0}}.button--audio-play>img{width:20px;height:40px}.button--audio-playback-rate{width:44px;height:44px;margin-left:1rem;border:2px solid #fff;border-radius:50%;font-size:14px;font-weight:700;color:#fff;background:transparent}@media(min-width:1000px){.button--audio-playback-rate{order:2;margin-left:0;margin-right:.6rem}}@media(max-width:599px){.push-button-right{margin-right:60px}}", ""]);
+exports.push([module.i, ".mv-universal-player--audio{display:none}.audio-interface{width:100%;max-width:1080px;color:#fff;border-radius:10px;background-color:#23272f;font-family:sans-serif}@media(min-width:600px){.audio-interface{display:flex;border-radius:6px}}.audio-interface__head{padding:0}@media(min-width:600px){.audio-interface__head{width:40%}}@media(min-width:1000px){.audio-interface__head{width:25%}}@media(min-width:600px){.audio-interface__body{display:flex;flex-wrap:wrap;align-content:center;flex-grow:1;width:60%;padding:1.5rem}}@media(min-width:1000px){.audio-interface__body{align-items:center;width:75%;padding:2.5rem}}.audio-interface__controls,.audio-interface__progress-bar,.audio-interface__title{padding-right:1.5rem;padding-left:1.5rem}.audio-interface__poster{width:100%;padding-top:100%;background-size:cover;background-position:50%;border-radius:10px;box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}@media(min-width:600px){.audio-interface__poster{border-radius:10px 0 0 10px;box-shadow:none}}.audio-interface__title{margin-right:1px;margin-left:1px;padding-top:1.5rem;padding-bottom:1.5rem;font-weight:700;font-size:1.25rem;line-height:1.5}@media(min-width:600px){.audio-interface__title{order:1;flex-grow:1;flex-shrink:0;width:70%;padding:0 0 2rem 0;font-size:1.4em;text-align:left}}@media(min-width:1000px){.audio-interface__title{width:100%}}.audio-interface__progress-bar{display:flex;flex-wrap:wrap;padding:0 1.5rem}@media(min-width:600px){.audio-interface__progress-bar{flex-grow:1;order:3;width:200px;margin:0;padding:1rem 0 0 0}}.audio-interface__controls{display:flex;align-items:center;justify-content:center;padding-top:1.5rem;padding-bottom:2.75rem}@media(min-width:600px){.audio-interface__controls{order:2;width:600px;flex-shrink:1;padding:0}}@media(min-width:1000px){.audio-interface__controls{width:230px;flex-shrink:0;padding:0}}.audio-interface__seeker{position:relative;background-color:grey;height:7px;border-radius:6px;width:100%;flex-shrink:0;margin-bottom:.5rem}.audio-interface__current-time-seeker{position:absolute;top:0;right:0;bottom:0;left:0;background-color:#2a8cf8;border-radius:6px}.audio-interface__current-time{margin-left:1px}.audio-interface__duration{margin-left:auto;margin-right:1px}.button--audio-play{width:66px;height:66px;font-size:1em;line-height:1;border-radius:50%;font-size:2.25rem;padding:.25rem 0 0 0;border-color:transparent;color:#000;background-color:#fff;box-shadow:0 15px 30px rgba(0,0,0,.25);transition:background-color .3s linear}@media(min-width:1000px){.button--audio-play{order:1;margin-right:1rem}}.button--audio-rewind{width:40px;outline:none;padding:0;border:none;font-size:45px;margin-right:1rem;color:#fff;background:transparent}@media(min-width:1000px){.button--audio-rewind{order:3;margin-right:0}}.button--audio-play>i{width:20px;height:40px}.button--audio-playback-rate{width:44px;height:44px;margin-left:1rem;border:2px solid #fff;border-radius:50%;font-size:14px;font-weight:700;color:#fff;background:transparent}@media(min-width:1000px){.button--audio-playback-rate{order:2;margin-left:0;margin-right:.6rem}}@media(max-width:599px){.push-button-right{margin-right:60px}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4062,13 +4076,6 @@ module.exports = !nativeAssign || fails(function () {
   } return T;
 } : nativeAssign;
 
-
-/***/ }),
-
-/***/ "644b":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/pause.e7738ead.svg";
 
 /***/ }),
 
@@ -5874,13 +5881,6 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
 
 /***/ }),
 
-/***/ "7f1d":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/rewind.993fbd92.svg";
-
-/***/ }),
-
 /***/ "7f9a":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6161,6 +6161,22 @@ module.exports = store.inspectSource;
 
 /***/ }),
 
+/***/ "8afd":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__("00a8");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
+// Module
+exports.push([module.i, "", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
@@ -6335,6 +6351,21 @@ var POLYFILL = isForced.POLYFILL = 'P';
 
 module.exports = isForced;
 
+
+/***/ }),
+
+/***/ "9876":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("8afd");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("4d5c3828", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -8749,6 +8780,17 @@ function _construct(Parent, args, Class) {
 }
 
 module.exports = _construct;
+
+/***/ }),
+
+/***/ "b377":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MindvalleyUniversalPlayer_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("9876");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MindvalleyUniversalPlayer_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MindvalleyUniversalPlayer_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MindvalleyUniversalPlayer_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -13205,13 +13247,6 @@ module.exports =
 
 /***/ }),
 
-/***/ "dab1":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/play.2672b995.svg";
-
-/***/ }),
-
 /***/ "dc3e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14685,12 +14720,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4be50ce0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=fad70f48&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4be50ce0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=cf087d64&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.audioMode)?_c('AudioPlayer',_vm._b({},'AudioPlayer',_vm.$props,false)):_vm._e(),(_vm.videoMode)?_c('VideoPlayer',_vm._b({},'VideoPlayer',_vm.$props,false)):_vm._e()],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=fad70f48&
+// CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=cf087d64&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__("c975");
@@ -14701,12 +14736,12 @@ var es_number_constructor = __webpack_require__("a9e3");
 // EXTERNAL MODULE: ./node_modules/video.js/dist/video-js.css
 var video_js = __webpack_require__("fda2");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4be50ce0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/AudioPlayer.vue?vue&type=template&id=b6e87d9e&
-var AudioPlayervue_type_template_id_b6e87d9e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mv-universal-player-container"},[_c('video',{ref:"videoElement",staticClass:"mv-universal-player--audio video-js",attrs:{"preload":"true","controls":""}},[_vm._l((_vm.sources),function(source){return _c('source',{key:source.type,attrs:{"type":source.type,"src":source.src}})}),_vm._m(0)],2),_c('div',{staticClass:"audio-interface"},[_c('section',{staticClass:"audio-interface__head"},[_c('div',{staticClass:"audio-interface__poster",style:({ backgroundImage: 'url(' + _vm.posterUrl + ')' })})]),_c('section',{staticClass:"audio-interface__body"},[_c('div',{staticClass:"audio-interface__title"},[_vm._v(" "+_vm._s(_vm.mediaTitle)+" ")]),_c('div',{staticClass:"audio-interface__progress-bar"},[_c('div',{ref:"seeker",staticClass:"audio-interface__seeker",on:{"click":_vm.seek}},[_c('div',{ref:"progress",staticClass:"audio-interface__current-time-seeker",style:({ width: _vm.durationCompletionPercentage + '%' })})]),_c('small',{staticClass:"audio-interface__current-time"},[_vm._v(" "+_vm._s(_vm.formatDuration(_vm.currentTime))+" ")]),_c('small',{staticClass:"audio-interface__duration"},[_vm._v(" "+_vm._s(_vm.formatDuration(_vm.mediaDuration))+" ")])]),_c('div',{staticClass:"audio-interface__controls"},[_c('button',{staticClass:"button button--audio-rewind",on:{"click":_vm.rewind}},[_c('img',{attrs:{"src":__webpack_require__("7f1d"),"alt":"rewind-icon"}})]),(_vm.playing)?_c('button',{staticClass:"button button--audio-play",on:{"click":function($event){return _vm.togglePlayState()}}},[_c('img',{attrs:{"src":__webpack_require__("644b"),"alt":"pause-icon"}})]):_vm._e(),(!_vm.playing)?_c('button',{staticClass:"button button--audio-play",class:{ 'push-button-right' : !_vm.playbackRatesEnabled },on:{"click":function($event){return _vm.togglePlayState()}}},[_c('img',{attrs:{"src":__webpack_require__("dab1"),"alt":"play-icon"}})]):_vm._e(),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.playbackRatesEnabled),expression:"playbackRatesEnabled"}],staticClass:"button button--audio-playback-rate",on:{"click":_vm.nextPlaybackRate}},[_vm._v(" "+_vm._s(_vm.playbackRate)+"x ")])])])])])}
-var AudioPlayervue_type_template_id_b6e87d9e_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',{staticClass:"vjs-no-js"},[_vm._v(" To view this video please enable JavaScript, and consider upgrading to a web browser that "),_c('a',{attrs:{"href":"https://videojs.com/html5-video-support/","target":"_blank"}},[_vm._v(" supports HTML5 video")])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"4be50ce0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/AudioPlayer.vue?vue&type=template&id=e6f55d8a&
+var AudioPlayervue_type_template_id_e6f55d8a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mv-universal-player-container"},[_c('video',{ref:"videoElement",staticClass:"mv-universal-player--audio video-js",attrs:{"preload":"true","controls":""}},[_vm._l((_vm.sources),function(source){return _c('source',{key:source.type,attrs:{"type":source.type,"src":source.src}})}),_vm._m(0)],2),_c('div',{staticClass:"audio-interface"},[_c('section',{staticClass:"audio-interface__head"},[_c('div',{staticClass:"audio-interface__poster",style:({ backgroundImage: 'url(' + _vm.posterUrl + ')' })})]),_c('section',{staticClass:"audio-interface__body"},[_c('div',{staticClass:"audio-interface__title"},[_vm._v(" "+_vm._s(_vm.mediaTitle)+" ")]),_c('div',{staticClass:"audio-interface__progress-bar"},[_c('div',{ref:"seeker",staticClass:"audio-interface__seeker",on:{"click":_vm.seek}},[_c('div',{ref:"progress",staticClass:"audio-interface__current-time-seeker",style:({ width: _vm.durationCompletionPercentage + '%' })})]),_c('small',{staticClass:"audio-interface__current-time"},[_vm._v(" "+_vm._s(_vm.formatDuration(_vm.currentTime))+" ")]),_c('small',{staticClass:"audio-interface__duration"},[_vm._v(" "+_vm._s(_vm.formatDuration(_vm.mediaDuration))+" ")])]),_c('div',{staticClass:"audio-interface__controls"},[_c('button',{staticClass:"button button--audio-rewind",on:{"click":_vm.rewind}},[_c('i',{staticClass:"mup-icon mup-icon-rewind"})]),(_vm.playing)?_c('button',{staticClass:"button button--audio-play",on:{"click":function($event){return _vm.togglePlayState()}}},[_c('i',{staticClass:"mup-icon mup-icon-pause"})]):_vm._e(),(!_vm.playing)?_c('button',{staticClass:"button button--audio-play",class:{ 'push-button-right' : !_vm.playbackRatesEnabled },on:{"click":function($event){return _vm.togglePlayState()}}},[_c('i',{staticClass:"mup-icon mup-icon-play"})]):_vm._e(),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.playbackRatesEnabled),expression:"playbackRatesEnabled"}],staticClass:"button button--audio-playback-rate",on:{"click":_vm.nextPlaybackRate}},[_vm._v(" "+_vm._s(_vm.playbackRate)+"x ")])])])])])}
+var AudioPlayervue_type_template_id_e6f55d8a_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',{staticClass:"vjs-no-js"},[_vm._v(" To view this video please enable JavaScript, and consider upgrading to a web browser that "),_c('a',{attrs:{"href":"https://videojs.com/html5-video-support/","target":"_blank"}},[_vm._v(" supports HTML5 video")])])}]
 
 
-// CONCATENATED MODULE: ./src/components/AudioPlayer.vue?vue&type=template&id=b6e87d9e&
+// CONCATENATED MODULE: ./src/components/AudioPlayer.vue?vue&type=template&id=e6f55d8a&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -64089,15 +64124,6 @@ if (videojs$1.registerPlugin) {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ var AudioPlayervue_type_script_lang_js_ = ({
   name: 'AudioPlayer',
@@ -64352,8 +64378,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_AudioPlayervue_type_script_lang_js_,
-  AudioPlayervue_type_template_id_b6e87d9e_render,
-  AudioPlayervue_type_template_id_b6e87d9e_staticRenderFns,
+  AudioPlayervue_type_template_id_e6f55d8a_render,
+  AudioPlayervue_type_template_id_e6f55d8a_staticRenderFns,
   false,
   null,
   null,
@@ -64735,7 +64761,11 @@ var VideoPlayer_component = normalizeComponent(
 });
 // CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_MindvalleyUniversalPlayervue_type_script_lang_js_ = (MindvalleyUniversalPlayervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=style&index=0&lang=scss&
+var MindvalleyUniversalPlayervue_type_style_index_0_lang_scss_ = __webpack_require__("b377");
+
 // CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue
+
 
 
 

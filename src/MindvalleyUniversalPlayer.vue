@@ -73,3 +73,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import 'assets/embedded-woff2.css';
+</style>

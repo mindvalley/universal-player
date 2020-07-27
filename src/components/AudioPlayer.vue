@@ -59,10 +59,7 @@
             class="button button--audio-rewind"
             @click="rewind"
           >
-            <img
-              src="@/assets/icons/rewind.svg"
-              alt="rewind-icon"
-            >
+            <i class="mup-icon mup-icon-rewind" />
           </button>
 
           <button
@@ -70,10 +67,7 @@
             class="button button--audio-play"
             @click="togglePlayState()"
           >
-            <img
-              src="@/assets/icons/pause.svg"
-              alt="pause-icon"
-            >
+            <i class="mup-icon mup-icon-pause" />
           </button>
 
           <button
@@ -82,10 +76,7 @@
             :class="{ 'push-button-right' : !playbackRatesEnabled }"
             @click="togglePlayState()"
           >
-            <img
-              src="@/assets/icons/play.svg"
-              alt="play-icon"
-            >
+            <i class="mup-icon mup-icon-play" />
           </button>
 
           <button
@@ -433,7 +424,7 @@ export default {
   line-height: 1;
   border-radius: 50%;
   font-size: 2.25rem;
-  padding:  0 0 8px 0;
+  padding: 0.25rem 0 0 0;
   border-color: transparent;
   color: black;
   background-color: white;
@@ -450,11 +441,10 @@ export default {
 
 .button--audio-rewind {
   width: 40px;
-  height: 44px;
   outline: none;
   padding: 0;
   border: none;
-  font-size: 1rem;
+  font-size: 45px;
   margin-right: 1rem;
   color: white;
   background: transparent;
@@ -467,7 +457,7 @@ export default {
   }
 }
 
-.button--audio-play > img {
+.button--audio-play > i {
   width: 20px;
   height: 40px;
 }
