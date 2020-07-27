@@ -266,7 +266,7 @@ export default {
 
 @media (min-width: 600px) {
   .audio-interface__head {
-    width: 40%;
+    width: 35%;
   }
 }
 
@@ -282,8 +282,8 @@ export default {
     flex-wrap: wrap;
     align-content: center;
     flex-grow: 1;
-    width: 60%;
-    padding: 1.5rem;
+    width: 65%;
+    padding: 1.25rem;
   }
 }
 
@@ -291,7 +291,7 @@ export default {
   .audio-interface__body {
     align-items: center;
     width: 75%;
-    padding: 2.5rem;
+    padding: 1.5rem;
   }
 }
 
@@ -335,15 +335,19 @@ export default {
     flex-grow: 1;
     flex-shrink: 0;
     width: 70%;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     font-size: 1.4em;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
 @media (min-width: 1000px) {
   .audio-interface__title {
     width: 100%;
+    padding-bottom: 1.25rem;
   }
 }
 
