@@ -168,18 +168,42 @@ export default {
 
       this.audioPlayer.on('timeupdate', () => {
         self.currentTime = this.audioPlayer.currentTime();
-        self.$emit('timeupdate', self.currentTime);
+
+        const payload = {
+          event: 'timeupdate',
+          currentTime: self.currentTime,
+        };
+
+        self.$emit('timeupdate', payload);
       });
 
       this.audioPlayer.on('play', () => {
         self.playing = true;
-        self.$emit('playerPlay');
+        const payload = {
+          event: 'play',
+        };
+
+        self.$emit('play', payload);
       });
 
       this.audioPlayer.on('pause', () => {
         self.playing = false;
-        self.$emit('playerPause');
+        const payload = {
+          event: 'pause',
+        };
+
+        self.$emit('pause', payload);
       });
+
+      this.audioPlayer.on('ended', () => {
+        const payload = {
+          event: 'ended',
+        };
+
+        self.$emit('ended', payload);
+      });
+
+      self.$emit('ready', this);
     },
     play() {
       this.audioPlayer.play();

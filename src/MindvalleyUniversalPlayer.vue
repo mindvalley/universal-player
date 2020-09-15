@@ -3,10 +3,20 @@
     <AudioPlayer
       v-if="audioMode"
       v-bind="$props"
+      @ready="('ready', $event)"
+      @play="emitEvent('play', $event)"
+      @pause="emitEvent('pause', $event)"
+      @timeupdate="emitEvent('timeupdate', $event)"
+      @ended="emitEvent('ended', $event)"
     />
     <VideoPlayer
       v-if="videoMode"
       v-bind="$props"
+      @ready="('ready', $event)"
+      @play="emitEvent('play', $event)"
+      @pause="emitEvent('pause', $event)"
+      @timeupdate="emitEvent('timeupdate', $event)"
+      @ended="emitEvent('ended', $event)"
     />
   </div>
 </template>
@@ -69,6 +79,11 @@ export default {
     },
     videoMode() {
       return (this.playerType === 'video');
+    },
+  },
+  methods: {
+    emitEvent(event, payload) {
+      this.$emit(event, payload);
     },
   },
 };

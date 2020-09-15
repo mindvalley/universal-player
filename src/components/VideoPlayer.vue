@@ -116,6 +116,36 @@ export default {
         },
       });
 
+      this.videoPlayer.on('timeupdate', () => {
+        const payload = {
+          event: 'timeupdate',
+          currentTime: self.videoPlayer.currentTime(),
+        };
+        self.$emit('timeupdate', payload);
+      });
+
+      this.videoPlayer.on('play', () => {
+        const payload = {
+          event: 'play',
+        };
+        self.$emit('play', payload);
+      });
+
+      this.videoPlayer.on('pause', () => {
+        const payload = {
+          event: 'pause',
+        };
+        self.$emit('pause', payload);
+      });
+
+      this.videoPlayer.on('ended', () => {
+        const payload = {
+          event: 'ended',
+        };
+
+        self.$emit('ended', payload);
+      });
+
       if (this.markersEnabled) {
         const button = videojs.getComponent('Button');
         const markersButton = videojs.extend(button, {
@@ -132,6 +162,8 @@ export default {
         videojs.registerComponent('markersButton', markersButton);
         this.videoPlayer.getChild('controlBar').addChild('markersButton', {});
       }
+
+      self.$emit('ready', this);
     },
     play() {
       this.videoPlayer.play();
