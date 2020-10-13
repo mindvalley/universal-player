@@ -110,8 +110,12 @@ export default {
 
       this.videoPlayer = videojs(this.videoElement, {
         fluid: true,
-        hls: {
-          overrideNative: true,
+        html5: {
+          nativeAudioTracks: false,
+          nativeVideoTracks: false,
+          hls: {
+            overrideNative: true,
+          },
         },
         playbackRates: this.playbackRates,
         controlBar: {

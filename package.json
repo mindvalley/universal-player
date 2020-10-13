@@ -1,6 +1,6 @@
 {
   "name": "@mindvalley/universal-player",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "./dist/mindvalley-universal-player.common.js",
   "files": [
     "dist/*",
