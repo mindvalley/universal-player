@@ -29,7 +29,7 @@
           {{ formatDuration(marker.time) }}
         </span>
         <span class="markers__text">
-          {{ marker.text }}
+          {{ marker.name }}
         </span>
       </li>
     </ul>
@@ -93,7 +93,7 @@ export default {
   color: #95989d;
   font-family: sans-serif;
   transform: translateX(100%);
-  z-index: 100;
+  z-index: 10;
   transition: transform 0.7s;
   border-radius: 0 10px 10px 0;
 }
