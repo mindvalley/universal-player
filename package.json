@@ -1,6 +1,6 @@
 {
   "name": "@mindvalley/universal-player",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "main": "./dist/mindvalley-universal-player.common.js",
   "files": [
     "dist/*",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "core-js": "3.6.5",
-    "video.js": "7.8.4",
+    "video.js": "7.13.3",
     "vue": "2.6.11"
   },
   "devDependencies": {

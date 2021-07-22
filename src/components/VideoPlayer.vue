@@ -111,11 +111,11 @@ export default {
       this.videoPlayer = videojs(this.videoElement, {
         fluid: true,
         html5: {
-          nativeAudioTracks: false,
-          nativeVideoTracks: false,
-          hls: {
+          vhs: {
             overrideNative: true,
           },
+          nativeAudioTracks: false,
+          nativeVideoTracks: false,
         },
         playbackRates: this.playbackRates,
         controlBar: {
@@ -143,6 +143,13 @@ export default {
           event: 'pause',
         };
         self.$emit('pause', payload);
+      });
+
+      this.videoPlayer.on('seeking', () => {
+        const payload = {
+          event: 'seeking',
+        };
+        self.$emit('seeking', payload);
       });
 
       this.videoPlayer.on('ended', () => {

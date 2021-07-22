@@ -195,6 +195,13 @@ export default {
         self.$emit('pause', payload);
       });
 
+      this.audioPlayer.on('seeking', () => {
+        const payload = {
+          event: 'seeking',
+        };
+        self.$emit('seeking', payload);
+      });
+
       this.audioPlayer.on('ended', () => {
         const payload = {
           event: 'ended',

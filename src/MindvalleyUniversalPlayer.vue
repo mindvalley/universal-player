@@ -6,6 +6,7 @@
       @ready="('ready', $event)"
       @play="emitEvent('play', $event)"
       @pause="emitEvent('pause', $event)"
+      @seeking="emitEvent('seeking', $event)"
       @timeupdate="emitEvent('timeupdate', $event)"
       @ended="emitEvent('ended', $event)"
     />
@@ -15,6 +16,7 @@
       @ready="('ready', $event)"
       @play="emitEvent('play', $event)"
       @pause="emitEvent('pause', $event)"
+      @seeking="emitEvent('seeking', $event)"
       @timeupdate="emitEvent('timeupdate', $event)"
       @ended="emitEvent('ended', $event)"
     />
