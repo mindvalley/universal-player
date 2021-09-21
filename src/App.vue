@@ -8,6 +8,8 @@
       :sources="sources"
       :poster-url="posterUrl"
       :media-duration="46"
+      :media-current-time="30"
+      :playbackRates="[1, 1.5]"
     />
 
     <h3>Video Player with Markers</h3>

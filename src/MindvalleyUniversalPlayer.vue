@@ -19,6 +19,8 @@
       @seeking="emitEvent('seeking', $event)"
       @timeupdate="emitEvent('timeupdate', $event)"
       @ended="emitEvent('ended', $event)"
+      @error="emitEvent('error', $event)"
+      @ratechange="emitEvent('ratechange', $event)"
     />
   </div>
 </template>
@@ -61,6 +63,10 @@ export default {
     mediaDuration: {
       type: Number,
       required: true,
+    },
+    mediaCurrentTime: {
+      type: Number,
+      default: 0,
     },
     markers: {
       type: Array,

@@ -1202,21 +1202,6 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ "2746":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("fe85");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("608ba96c", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ "2b8c":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2680,6 +2665,20 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "8b09":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".mv-universal-player-container[data-v-535ad37d]{position:relative;display:flex;overflow:hidden;font-family:sans-serif}.mv-universal-player[data-v-535ad37d]{position:relative;width:100%;flex-shrink:0;padding-top:56.25%;border-radius:10px}@media(min-width:1000px){.mv-universal-player--with-markers[data-v-535ad37d]{width:65%;padding-top:36.5625%;border-radius:10px 0 0 10px}}.mv-universal-player>video[data-v-535ad37d],[data-v-535ad37d] .vjs-poster{border-radius:10px}[data-v-535ad37d] .mv-universal-player.video-js:hover .vjs-big-play-button{background-color:hsla(0,0%,100%,.75);transition:background-color .3s linear;border-color:transparent}[data-v-535ad37d] .mv-universal-player .vjs-big-play-button{top:auto;bottom:15px;left:12.5px;width:50px;height:50px;font-size:2.5em;line-height:1.9;border-radius:50%;border-color:transparent;color:#000;background-color:#fff;box-shadow:0 15px 30px rgba(0,0,0,.25);transition:background-color .3s linear}@media(min-width:600px){[data-v-535ad37d] .mv-universal-player .vjs-big-play-button{bottom:30px;left:25px;width:70px;height:70px;font-size:3.5em}}[data-v-535ad37d] .vjs-control-bar{font-size:100%}@media(min-width:600px){[data-v-535ad37d] .vjs-control-bar{font-size:130%}}[data-v-535ad37d] .vjs-control.vjs-button[title=\"Jump To\"]{width:6em;padding-right:10px}@media(min-width:1000px){[data-v-535ad37d] .vjs-control.vjs-button[title=\"Jump To\"]{display:none}}[data-v-535ad37d] .vjs-control.vjs-button[title=\"Jump To\"]>.vjs-control-text{position:static;width:auto;height:auto;clip:auto}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
@@ -4107,6 +4106,21 @@ VTTCue.prototype.getCueAsHTML = function() {
 
 module.exports = VTTCue;
 
+
+/***/ }),
+
+/***/ "b059":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("8b09");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("7f7e7475", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -9566,14 +9580,14 @@ module.exports = Object.keys || function keys(O) {
 
 /***/ }),
 
-/***/ "e0bc":
+/***/ "e100":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_2ece8949_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("2746");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_2ece8949_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_2ece8949_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_535ad37d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("b059");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_535ad37d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_535ad37d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_2ece8949_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoPlayer_vue_vue_type_style_index_0_id_535ad37d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -9865,12 +9879,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"44bd08f2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=e66cc292&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.audioMode)?_c('AudioPlayer',_vm._b({on:{"ready":function($event){('ready', $event)},"play":function($event){return _vm.emitEvent('play', $event)},"pause":function($event){return _vm.emitEvent('pause', $event)},"seeking":function($event){return _vm.emitEvent('seeking', $event)},"timeupdate":function($event){return _vm.emitEvent('timeupdate', $event)},"ended":function($event){return _vm.emitEvent('ended', $event)}}},'AudioPlayer',_vm.$props,false)):_vm._e(),(_vm.videoMode)?_c('VideoPlayer',_vm._b({on:{"ready":function($event){('ready', $event)},"play":function($event){return _vm.emitEvent('play', $event)},"pause":function($event){return _vm.emitEvent('pause', $event)},"seeking":function($event){return _vm.emitEvent('seeking', $event)},"timeupdate":function($event){return _vm.emitEvent('timeupdate', $event)},"ended":function($event){return _vm.emitEvent('ended', $event)}}},'VideoPlayer',_vm.$props,false)):_vm._e()],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"44bd08f2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=45a09a3b&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.audioMode)?_c('AudioPlayer',_vm._b({on:{"ready":function($event){('ready', $event)},"play":function($event){return _vm.emitEvent('play', $event)},"pause":function($event){return _vm.emitEvent('pause', $event)},"seeking":function($event){return _vm.emitEvent('seeking', $event)},"timeupdate":function($event){return _vm.emitEvent('timeupdate', $event)},"ended":function($event){return _vm.emitEvent('ended', $event)}}},'AudioPlayer',_vm.$props,false)):_vm._e(),(_vm.videoMode)?_c('VideoPlayer',_vm._b({on:{"ready":function($event){('ready', $event)},"play":function($event){return _vm.emitEvent('play', $event)},"pause":function($event){return _vm.emitEvent('pause', $event)},"seeking":function($event){return _vm.emitEvent('seeking', $event)},"timeupdate":function($event){return _vm.emitEvent('timeupdate', $event)},"ended":function($event){return _vm.emitEvent('ended', $event)},"error":function($event){return _vm.emitEvent('error', $event)},"ratechange":function($event){return _vm.emitEvent('ratechange', $event)}}},'VideoPlayer',_vm.$props,false)):_vm._e()],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=e66cc292&
+// CONCATENATED MODULE: ./src/MindvalleyUniversalPlayer.vue?vue&type=template&id=45a09a3b&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__("c975");
@@ -70081,12 +70095,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var AudioPlayer = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"44bd08f2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VideoPlayer.vue?vue&type=template&id=2ece8949&scoped=true&
-var VideoPlayervue_type_template_id_2ece8949_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mv-universal-player-container"},[_c('video',{ref:"videoElement",staticClass:"mv-universal-player video-js",class:{'mv-universal-player--with-markers' : _vm.markersEnabled},attrs:{"poster":_vm.posterUrl,"preload":"true","controls":""}},[_vm._l((_vm.sources),function(source){return _c('source',{key:source.type,attrs:{"type":source.type,"src":source.src}})}),_vm._m(0)],2),(_vm.markersEnabled)?_c('Markers',{attrs:{"show-markers-menu":_vm.showMarkersMenu,"markers":_vm.markers},on:{"markerItemClick":function($event){return _vm.onMarkerItemClick($event)},"markersMenuVisibilityChange":function($event){return _vm.onMarkersMenuVisibilityChange($event)}}}):_vm._e()],1)}
-var VideoPlayervue_type_template_id_2ece8949_scoped_true_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',{staticClass:"vjs-no-js"},[_vm._v(" To view this video please enable JavaScript, and consider upgrading to a web browser that "),_c('a',{attrs:{"href":"https://videojs.com/html5-video-support/","target":"_blank"}},[_vm._v(" supports HTML5 video")])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"44bd08f2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VideoPlayer.vue?vue&type=template&id=535ad37d&scoped=true&
+var VideoPlayervue_type_template_id_535ad37d_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mv-universal-player-container"},[_c('video',{ref:"videoElement",staticClass:"mv-universal-player video-js",class:{'mv-universal-player--with-markers' : _vm.markersEnabled},attrs:{"poster":_vm.posterUrl,"preload":"true","controls":""}},[_vm._l((_vm.sources),function(source){return _c('source',{key:source.type,attrs:{"type":source.type,"src":source.src}})}),_vm._m(0)],2),(_vm.markersEnabled)?_c('Markers',{attrs:{"show-markers-menu":_vm.showMarkersMenu,"markers":_vm.markers},on:{"markerItemClick":function($event){return _vm.onMarkerItemClick($event)},"markersMenuVisibilityChange":function($event){return _vm.onMarkersMenuVisibilityChange($event)}}}):_vm._e()],1)}
+var VideoPlayervue_type_template_id_535ad37d_scoped_true_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',{staticClass:"vjs-no-js"},[_vm._v(" To view this video please enable JavaScript, and consider upgrading to a web browser that "),_c('a',{attrs:{"href":"https://videojs.com/html5-video-support/","target":"_blank"}},[_vm._v(" supports HTML5 video")])])}]
 
 
-// CONCATENATED MODULE: ./src/components/VideoPlayer.vue?vue&type=template&id=2ece8949&scoped=true&
+// CONCATENATED MODULE: ./src/components/VideoPlayer.vue?vue&type=template&id=535ad37d&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"44bd08f2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Markers.vue?vue&type=template&id=191cd8ea&scoped=true&
 var Markersvue_type_template_id_191cd8ea_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"markers-container",class:{ 'is-active' : _vm.showMarkersMenu }},[_c('header',{staticClass:"markers-header"},[_c('div',{staticClass:"markers-header__title"},[_vm._v(" Jump To ")]),_c('button',{staticClass:"button button--close",on:{"click":function($event){return _vm.toggleMarkers()}}},[_c('div',{staticClass:"vjs-icon-cancel"})])]),_c('ul',{ref:"markers",staticClass:"markers"},_vm._l((_vm.sortedMarkers),function(marker){return _c('li',{key:marker.time,staticClass:"markers__item",on:{"click":function($event){return _vm.jumpToTime(marker.time)}}},[_c('span',{staticClass:"markers__time"},[_vm._v(" "+_vm._s(_vm.formatDuration(marker.time))+" ")]),_c('span',{staticClass:"markers__text"},[_vm._v(" "+_vm._s(marker.name)+" ")])])}),0)])}
@@ -70206,6 +70220,7 @@ var Markers_component = normalizeComponent(
 /* harmony default export */ var Markers = (Markers_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VideoPlayer.vue?vue&type=script&lang=js&
 
+
 //
 //
 //
@@ -70268,6 +70283,10 @@ var Markers_component = normalizeComponent(
       type: String,
       default: ''
     },
+    mediaCurrentTime: {
+      type: Number,
+      default: 0
+    },
     markers: {
       type: Array,
       default: function _default() {
@@ -70324,6 +70343,7 @@ var Markers_component = normalizeComponent(
           pictureInPictureToggle: false
         }
       });
+      this.videoPlayer.currentTime(this.mediaCurrentTime);
       this.videoPlayer.on('timeupdate', function () {
         var payload = {
           event: 'timeupdate',
@@ -70354,6 +70374,18 @@ var Markers_component = normalizeComponent(
           event: 'ended'
         };
         self.$emit('ended', payload);
+      });
+      this.videoPlayer.on('error', function () {
+        var payload = {
+          event: 'error'
+        };
+        self.$emit('error', payload);
+      });
+      this.videoPlayer.on('ratechange', function () {
+        var payload = {
+          event: 'ratechange'
+        };
+        self.$emit('ratechange', payload);
       });
 
       if (this.markersEnabled) {
@@ -70397,8 +70429,8 @@ var Markers_component = normalizeComponent(
 });
 // CONCATENATED MODULE: ./src/components/VideoPlayer.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VideoPlayervue_type_script_lang_js_ = (VideoPlayervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/VideoPlayer.vue?vue&type=style&index=0&id=2ece8949&lang=scss&scoped=true&
-var VideoPlayervue_type_style_index_0_id_2ece8949_lang_scss_scoped_true_ = __webpack_require__("e0bc");
+// EXTERNAL MODULE: ./src/components/VideoPlayer.vue?vue&type=style&index=0&id=535ad37d&lang=scss&scoped=true&
+var VideoPlayervue_type_style_index_0_id_535ad37d_lang_scss_scoped_true_ = __webpack_require__("e100");
 
 // CONCATENATED MODULE: ./src/components/VideoPlayer.vue
 
@@ -70411,11 +70443,11 @@ var VideoPlayervue_type_style_index_0_id_2ece8949_lang_scss_scoped_true_ = __web
 
 var VideoPlayer_component = normalizeComponent(
   components_VideoPlayervue_type_script_lang_js_,
-  VideoPlayervue_type_template_id_2ece8949_scoped_true_render,
-  VideoPlayervue_type_template_id_2ece8949_scoped_true_staticRenderFns,
+  VideoPlayervue_type_template_id_535ad37d_scoped_true_render,
+  VideoPlayervue_type_template_id_535ad37d_scoped_true_staticRenderFns,
   false,
   null,
-  "2ece8949",
+  "535ad37d",
   null
   
 )
@@ -70424,6 +70456,8 @@ var VideoPlayer_component = normalizeComponent(
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/MindvalleyUniversalPlayer.vue?vue&type=script&lang=js&
 
 
+//
+//
 //
 //
 //
@@ -70481,6 +70515,10 @@ var VideoPlayer_component = normalizeComponent(
     mediaDuration: {
       type: Number,
       required: true
+    },
+    mediaCurrentTime: {
+      type: Number,
+      default: 0
     },
     markers: {
       type: Array,
@@ -70593,20 +70631,6 @@ module.exports = NATIVE_SYMBOL
   && !Symbol.sham
   // eslint-disable-next-line no-undef
   && typeof Symbol.iterator == 'symbol';
-
-
-/***/ }),
-
-/***/ "fe85":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".mv-universal-player-container[data-v-2ece8949]{position:relative;display:flex;overflow:hidden;font-family:sans-serif}.mv-universal-player[data-v-2ece8949]{position:relative;width:100%;flex-shrink:0;padding-top:56.25%;border-radius:10px}@media(min-width:1000px){.mv-universal-player--with-markers[data-v-2ece8949]{width:65%;padding-top:36.5625%;border-radius:10px 0 0 10px}}.mv-universal-player>video[data-v-2ece8949],[data-v-2ece8949] .vjs-poster{border-radius:10px}[data-v-2ece8949] .mv-universal-player.video-js:hover .vjs-big-play-button{background-color:hsla(0,0%,100%,.75);transition:background-color .3s linear;border-color:transparent}[data-v-2ece8949] .mv-universal-player .vjs-big-play-button{top:auto;bottom:15px;left:12.5px;width:50px;height:50px;font-size:2.5em;line-height:1.9;border-radius:50%;border-color:transparent;color:#000;background-color:#fff;box-shadow:0 15px 30px rgba(0,0,0,.25);transition:background-color .3s linear}@media(min-width:600px){[data-v-2ece8949] .mv-universal-player .vjs-big-play-button{bottom:30px;left:25px;width:70px;height:70px;font-size:3.5em}}[data-v-2ece8949] .vjs-control-bar{font-size:100%}@media(min-width:600px){[data-v-2ece8949] .vjs-control-bar{font-size:130%}}[data-v-2ece8949] .vjs-control.vjs-button[title=\"Jump To\"]{width:6em;padding-right:10px}@media(min-width:1000px){[data-v-2ece8949] .vjs-control.vjs-button[title=\"Jump To\"]{display:none}}[data-v-2ece8949] .vjs-control.vjs-button[title=\"Jump To\"]>.vjs-control-text{position:static;width:auto;height:auto;clip:auto}", ""]);
-// Exports
-module.exports = exports;
 
 
 /***/ }),

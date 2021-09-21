@@ -66,6 +66,10 @@ export default {
       type: String,
       default: '',
     },
+    mediaCurrentTime: {
+      type: Number,
+      default: 0,
+    },
     markers: {
       type: Array,
       default() {
@@ -123,6 +127,8 @@ export default {
         },
       });
 
+      this.videoPlayer.currentTime(this.mediaCurrentTime);
+
       this.videoPlayer.on('timeupdate', () => {
         const payload = {
           event: 'timeupdate',
@@ -158,6 +164,22 @@ export default {
         };
 
         self.$emit('ended', payload);
+      });
+
+      this.videoPlayer.on('error', () => {
+        const payload = {
+          event: 'error',
+        };
+
+        self.$emit('error', payload);
+      });
+
+      this.videoPlayer.on('ratechange', () => {
+        const payload = {
+          event: 'ratechange',
+        };
+
+        self.$emit('ratechange', payload);
       });
 
       if (this.markersEnabled) {
