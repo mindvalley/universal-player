@@ -138,15 +138,27 @@ export default {
       });
 
       this.videoPlayer.on('play', () => {
+        const playerState = {
+          isFullscreen: this.videoPlayer.isFullscreen(),
+          currentPlaybackRate: this.videoPlayer.playbackRate(),
+        };
+
         const payload = {
           event: 'play',
+          playerState,
         };
         self.$emit('play', payload);
       });
 
       this.videoPlayer.on('pause', () => {
+        const playerState = {
+          isFullscreen: this.videoPlayer.isFullscreen(),
+          currentPlaybackRate: this.videoPlayer.playbackRate(),
+        };
+
         const payload = {
           event: 'pause',
+          playerState,
         };
         self.$emit('pause', payload);
       });
@@ -167,16 +179,29 @@ export default {
       });
 
       this.videoPlayer.on('error', () => {
+        const playerState = {
+          isFullscreen: this.videoPlayer.isFullscreen(),
+          currentPlaybackRate: this.videoPlayer.playbackRate(),
+        };
+
         const payload = {
           event: 'error',
+          playerState,
+          error: this.videoPlayer.error(),
         };
 
         self.$emit('error', payload);
       });
 
       this.videoPlayer.on('ratechange', () => {
+        const playerState = {
+          isFullscreen: this.videoPlayer.isFullscreen(),
+          currentPlaybackRate: this.videoPlayer.playbackRate(),
+        };
+
         const payload = {
           event: 'ratechange',
+          playerState,
         };
 
         self.$emit('ratechange', payload);
